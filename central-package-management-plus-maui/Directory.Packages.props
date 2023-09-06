@@ -1,9 +1,17 @@
 <Project>
   <PropertyGroup>
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
-    <NoWarn>"NU1009"</NoWarn>
+    <MauiVersion>8.0.100-rc.1-dev</MauiVersion>
   </PropertyGroup>
   <ItemGroup>
-    <PackageVersion Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.0" Condition="'$(UseMaui)' != 'true'" />
+    <PackageVersion Include="Microsoft.Maui.Core" Version="$(MauiVersion)" />
+    <PackageVersion Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
+    <PackageVersion Include="Microsoft.Maui.Controls.Core" Version="$(MauiVersion)" />
+    <PackageVersion Include="Microsoft.Maui.Controls.Build.Tasks" Version="$(MauiVersion)" />
+    <PackageVersion Include="Microsoft.Maui.Controls.Xaml" Version="$(MauiVersion)" />
+    <PackageVersion Include="Microsoft.Maui.Essentials" Version="$(MauiVersion)" />
+    <PackageVersion Include="Microsoft.Maui.Resizetizer" Version="$(MauiVersion)" />
+    <PackageVersion Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.0-rc.1.23416.26" />
+    <PackageVersion Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0-rc.1.23416.26" />
   </ItemGroup>
 </Project>
